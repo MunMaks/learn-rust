@@ -13,6 +13,7 @@ struct User {
 struct Color(i32, i32, i32);
 struct Point(i32, i32, i32);
 
+/*  struct AlwaysTrue; */
 
 fn main(){
     let user1: User = build_user(String::from("First username"), String::from("First email"));
@@ -36,7 +37,9 @@ fn main(){
     println!("in the middle of black: {}", black.1);
     println!("in the end of center : {}", center.2);
 
-    
+
+    /* let subject = AlwaysTrue; */
+    /* Il est recommende d'utiliser le String au lieu de &str; */
 
 }
 
